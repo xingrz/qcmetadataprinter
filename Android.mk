@@ -3,7 +3,7 @@ LOCAL_PATH := $(call my-dir)
 include $(CLEAR_VARS)
 
 LOCAL_SRC_FILES := get_offsets.c
-LOCAL_C_INCLUDES := $(LOCAL_PATH)/../camera/QCamera2/stack/common
+LOCAL_C_INCLUDES := $(call project-path-for,qcom-camera)/QCamera2/stack/common
 
 LOCAL_C_INCLUDES += $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr/include
 LOCAL_ADDITIONAL_DEPENDENCIES := $(TARGET_OUT_INTERMEDIATES)/KERNEL_OBJ/usr
