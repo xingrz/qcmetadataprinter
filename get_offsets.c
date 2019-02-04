@@ -4,8 +4,8 @@
 // Camera
 #include <cam_intf.h>
 
-#define CAM_LIB_MCT "libmmcamera2_mct.so"
-#define CAM_LIB_OEM "liboemcamera.so"
+#define CAM_LIB_MCT "/vendor/lib/libmmcamera2_mct.so"
+#define CAM_LIB_OEM "/vendor/lib/liboemcamera.so"
 
 #define PRINT(PARAM_ID, table_ptr)                                                                  \
     blob_pointer = (char*)(get_pointer_of(PARAM_ID, table_ptr)) - (char*)(table_ptr);               \
